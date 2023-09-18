@@ -3,6 +3,11 @@ import App from './App.vue'
 import router from './router'
 import './style/index.sass'
 import 'tailwindcss/tailwind.css'
+import Notification from '@/common/plugin/notification.js'
+import Message from './common/plugin/message'
+import { createHead } from '@vueuse/head'
+
+const head = createHead()
 
 import {
   Button,
@@ -48,7 +53,8 @@ import {
   List,
   TreeSelect,
   Tree,
-  Timeline
+  Timeline,
+  Typography
 } from 'ant-design-vue'
 
 // import 'ant-design-vue/dist/antd.css'
@@ -91,10 +97,8 @@ app.use(Switch)
 app.use(Empty)
 app.use(Divider)
 app.use(Slider)
-app.use(Loading)
 app.use(Breadcrumb)
 app.use(Drawer)
-app.use(VueApexCharts)
 app.use(Spin)
 app.use(Rate)
 app.use(Steps)
@@ -105,3 +109,6 @@ app.use(List)
 app.use(TreeSelect)
 app.use(Tree)
 app.use(Timeline)
+app.use(Typography)
+
+app.use(head)

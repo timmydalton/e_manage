@@ -1,0 +1,49 @@
+.homepage-content
+  width: 100%
+  height: auto
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  grid-template-rows: max-content
+  gap: 0px
+  .table
+    width: 100%
+    height: 200px
+    display: flex
+    align-items: center
+    justify-content: center
+  .table-button
+    cursor: pointer
+    border-radius: 16px
+    box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.15)
+    width: 160px
+    height: 160px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    transition: all ease .2s
+    &:hover
+      transform: translateY(-10px)
+  .table-icon
+    width: 80px
+    height: 80px
+    svg
+      width: 80px
+      height: 80px
+  .table-name
+    width: 100%
+    text-align: center
+  
+.noti-box
+  flex: 1
+  min-height: 300px
+  width: 100%
+  padding: 16px
+  .content
+    padding: 16px
+    background: #e5e5e5
+    border-radius: 16px
+  .ant-alert
+    transition: all ease .2s
+    &:hover
+      transform: translateY(-2px)
