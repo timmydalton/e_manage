@@ -9,7 +9,8 @@ const { cookies } = useCookies();
 const routes = [
   {
     path: '/',
-    component: () => import('@/components/HelloWorld.vue')
+    component: () => import('@/components/HelloWorld.vue'),
+    redirect: { path: '/login' },
   },
   {
     path: '/login',
@@ -26,6 +27,10 @@ const routes = [
         component: () => import('@/components/Homepage.vue')
       },
     ]
+  },
+  {
+    path: '/order/:id',
+    component: () => import('@/view/Order.vue')
   }
 ]
 
