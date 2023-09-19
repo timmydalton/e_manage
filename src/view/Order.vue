@@ -57,7 +57,7 @@
               <div class="food-card">
                 <div class="flex w-full h-full">
                   <div class="food-img">
-                    <img src="https://statics.pancake.vn/web-media/70/24/90/3f/ba37f9c658806c5709f5fd6d9e66b459a1ac35c402082bf5098df566.png" alt="">
+                    <img src="https://statics.pancake.vn/web-media/70/24/90/3f/ba37f9c658806c5709f5fd6d9e66b459a1ac35c402082bf5098df566.png " alt="">
                   </div>
                   <div class="flex-1 h-full pl-4 flex flex-col">
                     <div class="food-title">
